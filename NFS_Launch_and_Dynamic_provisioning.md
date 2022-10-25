@@ -1,4 +1,4 @@
- # NFS Server: Launch and Dynamic Provisioning
+ # NFS Server: Installation and Dynamic Provisioning
  ## Steps
  1. Launch a VM with cloud-init file: `multipass launch -c 5 -m 5G -d 50G -n nfs-server --cloud-init cloud-init.yaml `
    - cloud-init.yaml
