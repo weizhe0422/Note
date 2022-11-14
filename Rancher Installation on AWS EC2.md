@@ -26,8 +26,6 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plu
 sudo docker run -d --restart=unless-stopped -p 80:80 -p 443:443 --privileged rancher/rancher:v2.6.8
 ```
 ```bash
-# get container id
-docker ps
 # get rancher default password
-docker logs  container-id  2>&1 | grep "Bootstrap Password:"
+docker ps --format '{{.ID}}' | awk '{print $1}' | xargs -i docker logs  {}  2>&1 | grep "Bootstrap Password:"| awk '{print $6}'
 ```
