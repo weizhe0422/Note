@@ -22,7 +22,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plu
 ```
 ## 2. Install Rancher
 ```bash
-sudo docker run -d --restart=unless-stopped -p 80:80 -p 443:443 --privileged rancher/rancher:v2.7.2
+sudo docker run -d --restart=unless-stopped -p 80:80 -p 443:443 --privileged rancher/rancher:v2.7.5
 ```
 ```bash
 # get rancher default password
